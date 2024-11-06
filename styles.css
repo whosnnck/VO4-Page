@@ -186,24 +186,27 @@ body {
   line-height: 1.6;
 }
 
-/* Pie de página */
+/* Estilos generales del footer */
 footer {
-  width: 100%;
-  background-color: #000;
+  background-color: #111;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 20px;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en una nueva línea si es necesario */
 }
 
-.contact-info p {
+.contact-info p,
+.social-media a {
+  color: white;
+  text-decoration: none;
+  display: block;
   margin: 5px 0;
 }
 
@@ -214,13 +217,29 @@ footer {
 
 .social-icon {
   color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
+  padding: 5px;
+  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .social-icon:hover {
   background-color: #e61919;
+}
+
+/* Estilos responsive para el footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+    text-align: center;
+  }
+
+  .social-media {
+    justify-content: center; /* Centra los íconos de redes sociales en pantallas pequeñas */
+    flex-direction: row; /* Mantiene los íconos en fila, pero ahora centrados */
+  }
+
+  .contact-info p,
+  .social-media a {
+    font-size: 0.9em; /* Reduce ligeramente el tamaño de fuente en pantallas pequeñas */
+  }
 }

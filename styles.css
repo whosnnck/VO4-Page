@@ -21,6 +21,7 @@ body {
 
 .logo {
   width: 80px;
+  border-radius: 15px;
 }
 
 .nav-menu {

@@ -10,11 +10,12 @@
     <!-- Barra de navegación -->
     <nav class="navbar">
       <img src="Imgs/LogoVO4.jpg" alt="MBA Logo" class="logo" />
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       <ul class="nav-menu">
         <li><a href="#" class="active">Inicio</a></li>
         <li><a href="#">Historia V04</a></li>
         <li><a href="#">Plantilla</a></li>
-        <li><a href="#">Proximos Eventos</a></li>
+        <li><a href="#">Próximos Eventos</a></li>
         <li><a href="#">Resultados y Logros</a></li>
         <li><a href="#">Fotos</a></li>
       </ul>
@@ -121,3 +122,10 @@
     </footer>
   </body>
 </html>
+
+<script>
+  function toggleMenu() {
+    const navMenu = document.querySelector(".nav-menu");
+    navMenu.classList.toggle("show");
+  }
+</script>

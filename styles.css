@@ -14,40 +14,64 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #111;
+  justify-content: space-between;
   padding: 10px 20px;
+  background-color: #111;
 }
 
 .logo {
-  height: 50px;
-  margin-right: 20px;
-  border-radius: 10%;
-  width: 60px;
+  width: 80px;
 }
 
 .nav-menu {
-  list-style: none;
   display: flex;
-  gap: 15px;
+  list-style: none;
+  gap: 20px;
 }
 
 .nav-menu li a {
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s;
 }
 
-.nav-menu li a:hover {
-  background-color: #ee0a0a; /* Fondo rojo al pasar el mouse */
-  color: white;
-  border-radius: 4px;
-}
-
+.nav-menu li a:hover,
 .nav-menu li a.active {
-  background-color: #ee0a0a;
-  color: white;
+  background-color: #e61919;
   border-radius: 4px;
+}
+
+/* Estilos responsive */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+  }
+
+  .nav-menu.show {
+    display: flex; /* Muestra el menú cuando tiene la clase 'show' */
+  }
+
+  .menu-toggle {
+    display: block; /* Muestra el botón de menú en pantallas pequeñas */
+  }
 }
 
 /* Encabezado principal */

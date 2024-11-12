@@ -194,18 +194,22 @@ footer {
 
 .social-media {
   display: flex;
-  gap: 10px;
+  gap: 10px; /* Espacio entre iconos */
+  justify-content: center;
 }
 
 .social-icon {
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  display: inline-block;
 }
 
-.social-icon:hover {
-  background-color: #e61919;
+.social-logo {
+  width: 24px; /* Tamaño típico para logos de redes sociales */
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
 }
 
 /* Estilos responsive para el footer */

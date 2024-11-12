@@ -175,20 +175,35 @@
             href="https://www.facebook.com/vo4baloncesto?mibextid=ZbWKwL"
             target="_blank"
             class="social-icon"
-            >Facebook</a
           >
+            <img
+              src="Imgs/Logo Social Media/facebook-logo-1-2.png"
+              alt="Facebook Logo"
+              class="social-logo"
+            />
+          </a>
           <a
             href="https://www.tiktok.com/@clubvo4baloncesto?_t=8r9FKuJMFz4&_r=1"
             target="_blank"
             class="social-icon"
-            >TikTok</a
           >
+            <img
+              src="Imgs/Logo Social Media/tiktok-logo-icon.png"
+              alt="TikTok Logo"
+              class="social-logo"
+            />
+          </a>
           <a
             href="https://www.instagram.com/vo4baloncesto?igsh=d295Z2Nicm14Y25z"
             target="_blank"
             class="social-icon"
-            >Instagram</a
           >
+            <img
+              src="Imgs/Logo Social Media/instagram logo.png"
+              alt="Instagram Logo"
+              class="social-logo"
+            />
+          </a>
         </div>
       </div>
       <p>&copy; 2024 V04 Club de Basketball. Todos los derechos reservados.</p>
@@ -197,24 +212,5 @@
 
   <!-- Enlace al archivo JavaScript externo -->
   <script src="moveCarousel.js"></script>
+  <script src="toggleMenu.js"></script>
 </html>
-<script>
-  // Función para alternar el menú
-  function toggleMenu() {
-    const navMenu = document.getElementById("navMenu");
-    navMenu.classList.toggle("show");
-  }
-
-  document.addEventListener("click", function (event) {
-    const navMenu = document.getElementById("navMenu");
-    const menuToggle = document.querySelector(".menu-toggle");
-
-    if (
-      navMenu.classList.contains("show") &&
-      !navMenu.contains(event.target) &&
-      !menuToggle.contains(event.target)
-    ) {
-      navMenu.classList.remove("show");
-    }
-  });
-</script>

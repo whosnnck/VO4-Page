@@ -257,8 +257,8 @@ footer {
 }
 
 .social-logo {
-  width: 24px; /* Tamaño típico para logos de redes sociales */
-  height: 24px;
+  width: 30px; /* Tamaño típico para logos de redes sociales */
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
